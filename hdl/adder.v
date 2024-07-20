@@ -83,16 +83,6 @@ generate case (TYPE)
 			.po({cout, sum})
 		);
 	end
-	"ksa16": begin
-		adder_ksa_r16 #(
-			.WIDTH(WIDTH)
-		) adder_inst (
-			.a(a),
-			.b(sub ? ~b : b),
-			.ci(sub),
-			.po({cout, sum})
-		);
-	end
 	"skla": begin
 		adder_skla_r2 #(
 			.WIDTH(WIDTH)
