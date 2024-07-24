@@ -8,6 +8,7 @@
 4) Sklansky Adder Radix-2 ("skla")
 5) Han-Carlson Adder Radix-2 ("hca")
 6) Brent-Kung Adder Radix-2 ("bka")
+7) Ladner-Fischer Adder Radix-2 ("lfa")
 
 ### P.S.
 
@@ -41,3 +42,7 @@ For full usage of adder (sign operations & subtraction) use the top module: adde
 #### Brent-Kung Adder
 ##### Example: 16-bit Brent-Kung Adder (Radix-2)
 ![BKA16R2](/img/bka_r2_16.png)
+
+#### Ladner-Fischer Adder
+##### Example: 16-bit Ladner-Fischer Adder (Radix-2)
+![LFA16R2](/img/lfa_r2_16.png)
