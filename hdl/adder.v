@@ -12,6 +12,7 @@
 //   4) Sklansky Adder Radix-2 ("skla")
 //   5) Han-Carlson Adder Radix-2 ("hca")
 //   6) Brent-Kung Adder Radix-2 ("bka")
+//   7) Ladner-Fischer Adder Radix-2 ("lfa")
 // License: MIT
 //  Copyright (c) 2024 Dmitry Matyunin
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -105,6 +106,16 @@ generate case (TYPE)
 	end
 	"bka": begin
 		adder_bka_r2 #(
+			.WIDTH(WIDTH)
+		) adder_inst (
+			.a(a),
+			.b(sub ? ~b : b),
+			.ci(sub),
+			.po({cout, sum})
+		);
+	end
+	"lfa": begin
+		adder_lfa_r2 #(
 			.WIDTH(WIDTH)
 		) adder_inst (
 			.a(a),
