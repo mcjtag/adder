@@ -4,7 +4,7 @@
 // 
 // Create Date: 24.07.2024 15:32:52
 // Design Name: adder
-// Module Name: adder_skla
+// Module Name: adder_lfa
 // Description: Ladner-Fischer Adder
 // License: MIT
 //  Copyright (c) 2024 Dmitry Matyunin
